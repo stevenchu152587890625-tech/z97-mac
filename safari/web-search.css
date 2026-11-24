@@ -1,0 +1,21 @@
+.z97-search {
+  height: 100%; overflow: auto; user-select: text;
+  color: var(--label); background: var(--window-bg, #fff);
+}
+.z97-search-body { max-width: 760px; margin: 0 auto; padding: clamp(14px, 4vw, 32px); }
+.z97-search h1 { margin: 0 0 12px; font-size: clamp(19px, 3.4vw, 28px); line-height: 1.25; overflow-wrap: anywhere; }
+.z97-search-toolbar { display: flex; flex-wrap: wrap; gap: 7px; }
+.z97-search button { cursor: pointer; }
+.z97-search-toolbar button { padding: 4px 11px; border-radius: 7px; border: 1px solid var(--separator); font-size: 13px; }
+.z97-search-toolbar button[aria-pressed="true"] { color: var(--accent); background: var(--accent-selection); }
+.z97-search-status { min-height: 22px; margin: 11px 0 6px; font-size: 12px; color: var(--label-2); }
+.z97-search-list { list-style: none; padding: 0; margin: 0; }
+.z97-search-list li { padding: 12px 0; border-bottom: 1px solid var(--separator); overflow-wrap: anywhere; }
+.z97-search-domain { display: block; color: var(--label-2); font-size: 12px; }
+.z97-search-list a { display: block; width: fit-content; color: var(--accent); font-size: 16px; font-weight: 650; }
+.z97-search-list a:hover, .z97-search-local button:hover { text-decoration: underline; }
+.z97-search-list p { color: var(--label-2); margin: 3px 0 0; line-height: 1.45; font-size: 13px; }
+.z97-search-local { margin-top: 20px; }
+.z97-search-local h2 { margin: 0 0 5px; font-size: 14px; }
+.z97-search-local ul { padding: 0; margin: 0; list-style: none; }
+.z97-search-local button { color: var(--accent); font-size: 13px; text-align: left; }
