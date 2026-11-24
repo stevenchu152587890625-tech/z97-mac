@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'none'; object-src 'none'; img-src 'self' blob:; media-src 'self' blob:; frame-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>工作台</title>
+  <link rel="stylesheet" href="./office.css">
+  <script type="module" src="./office.js"></script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">▦</span>工作台</a>
+    <div class="top-actions">
+      <button type="button" id="search-button" class="quiet">搜尋 <kbd>Ctrl K</kbd></button>
+      <button type="button" id="new-button" class="primary">＋ 新增</button>
+    </div>
+  </header>
+  <div class="layout">
+    <aside class="rail">
+      <nav aria-label="工作台">
+        <a href="#home" data-view="home"><span aria-hidden="true">⌂</span> 總覽</a>
+        <a href="#doc" data-view="doc"><span aria-hidden="true">▤</span> 文件</a>
+        <a href="#sheet" data-view="sheet"><span aria-hidden="true">▦</span> 試算表</a>
+        <a href="#task" data-view="task"><span aria-hidden="true">☑</span> 任務</a>
+        <a href="#event" data-view="event"><span aria-hidden="true">◫</span> 行事曆</a>
+        <a href="#contact" data-view="contact"><span aria-hidden="true">♙</span> 聯絡人</a>
+        <a href="#asset" data-view="asset"><span aria-hidden="true">▱</span> 檔案</a>
+      </nav>
+      <div class="rail-bottom">
+        <a href="#trash" data-view="trash">垃圾桶</a>
+        <a href="#settings" data-view="settings">備份與設定</a>
+        <a id="desktop-link" href="../">返回桌面</a>
+      </div>
+    </aside>
+    <main id="main" tabindex="-1"><p class="loading">正在載入工作資料…</p></main>
+  </div>
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+  <div id="notice" role="status" aria-live="polite"></div>
+  <input id="import-input" type="file" multiple hidden>
+</body>
+</html>
